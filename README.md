@@ -1,21 +1,39 @@
-# Weather-Dashboard
-Unit 06 homework
+# Ahm-Weather-Dashboard
+Challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.Use the OpenWeather One Call API (Links to an external site.) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use localStorage to store any persistent data.
 
-See the deployed app here:
-https://ryanellingson.github.io/Weather-Dashboard/
+## User Story
+AS A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingly
 
-# Project Description
 
-![Screenshot of weather dashboard](https://github.com/RyanEllingson/Weather-Dashboard/blob/master/assets/images/weather-dashboard-snip.JPG)
+## Acceptance Criteria
+*   GIVEN a weather dashboard with form inputs
+    *   WHEN I search for a city
+        *   THEN I am presented with current and future conditions for that city and that city is added to the search history
+    *   WHEN I view current weather conditions for that city
+        *   THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+    *   WHEN I view the UV index
+        *   THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+    *   WHEN I view future weather conditions for that city
+        *   THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+    *   WHEN I click on a city in the search history
+        *   THEN I am again presented with current and future conditions for that city
 
-In this app, the user enters the name of a city (either just the city name, or "city, state") in the search field, then clicks the search button.  The app will display the current weather conditions in that city, including temperature, humidity, UV index, and a picture representing whether it is clear, cloudy, raining, etc.  Additionally, a 5-day forecast for that city is displayed below the current conditions showing similar information (predicted at 12:00 PM on each day).
 
-Every time a user searches for a city, a button displaying that search information is created underneath the search field.  When the user clicks on that button, a new search is executed for that location.  Additionally, if the user closes the window or refreshes the browser, the search history buttons remain, and the app will open up with weather results for the last city the user searched for.  Finally, clicking the "Clear History" button clears the user's local storage and removes the history buttons from the page.
+### Tasks Accomplished to achieve the acceptance criteria 
+*   1 Added async call to fetch weather data 
+*   2 Dynamically added HTML and CSS to show weather data
+*   3 once city weather data is fetched city is saved and it will persist
+*   4 click on the saves city will fetch and display weather
 
-# Challenges, Opportunities for Improvement
+### Desktop Screen Images
+Weather Page
+![Header-Nav](./assets/images/weather.jpg?raw=true "Ahm-Weather")
 
-This app was created using the Open Weather Map data API.  In order to get all the information needed, a good deal of manipulation of the response from the get request was needed, including taking information from one response to generate a new request.  For example, the initial search based on city name returns latitude and longitude coordinates, and these coordinates are used in the UV Index get request.
+### Links
+* Code Repository Link  (https://github.com/ahmads62/Ahm-Weather)
+* Deployed Website Link (https://ahmads62.github.io/Ahm-Weather/index.html)
 
-Another technology used in this app is the javascript Date object.  In order to display dates on the current condition and forecasts, the timestamp returned by the Open Weather Map response is converted into a Date, then the getDate, getMonth, and getFullYear methods are used to generate the date strings displayed on the page.
-
-One problem with the app is if the Open Weather Map fails to find a city that matches what the user typed, no feedback is provided to the user.  I tried to write code that displays a message if a 404 error code is returned, but the javascript just doesn't execute, so the only way to know when that happens is the error message logged in the console.
+## Installation
+Upload index.html, and assets folder, assets folder contains images and CSS files.
