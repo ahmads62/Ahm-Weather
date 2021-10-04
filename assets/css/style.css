@@ -1,0 +1,65 @@
+body {
+    background-color: lightblue;
+  }
+
+.navbar-brand {
+    font-size: 36px;
+}
+
+.search-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.city-name {
+    font-size: 30px;
+    border: 0.16rem solid rgba(255,255,255,0);
+     border-radius: 2rem;
+    
+}
+
+.column {
+    background-color:#98a0bb;
+    color:#FFFFFF;
+    font-size: 12px;   
+}
+
+.dayname {
+    font-size: 12px;
+    font-weight: bold ;
+}
+
+.btn{
+    background-color:#98a0bb;
+     border: 0.16em solid rgba(255,255,255,0);
+     color:#FFFFFF;
+ 
+}
+.btnsearch{
+    border: 0.16em solid rgba(255,255,255,0);
+    background-color:#98a0bb;
+    color:#FFFFFF;  
+}
+.btn:hover{
+    border-color: rgba(255,255,255,1);
+    }
+.btnsearch:hover{
+    border-color: rgba(255,255,255,1);
+}     
+
+.hide {
+    display: none;
+}
+#err {
+    font-size: x-small;
+    color: red;
+    margin-top: -1rem;
+}
+.fitImage{
+    width: 100%;
+    object-fit: cover;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto
+  }
